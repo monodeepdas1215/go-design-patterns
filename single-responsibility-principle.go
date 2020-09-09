@@ -12,7 +12,7 @@ type Journal struct {
 }
 
 func (j *Journal) AddEntry(text string) int {
-	entryCount ++
+	entryCount++
 	entry := fmt.Sprintf("%d: %s", entryCount, text)
 	j.entries = append(j.entries, entry)
 	return entryCount
